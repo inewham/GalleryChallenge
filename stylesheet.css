@@ -1,3 +1,21 @@
 body {
-	
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
+}
+
+h2 {
+    text-align: center;
+}
+
+.main-container {
+    margin: 10px;
+    /*border: 1px solid black;*/
+    padding: 10px;
+    background-color: white;
+}
+
+.main-thumbnail {
+    margin: 5px;
+    width: 8em;
+    height: auto;
 }

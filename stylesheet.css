@@ -1,19 +1,23 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #eeeeee;
+    background-color: #EEEEEE;
 }
 
 h2 {
     text-align: center;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-.navbar-local {
-    justify-content: left;
-}
-
-#nav-about {
-     float: right;
-     align-self: : center;
+#title {
+    font-size: 5em;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    background: url("images\\ricardo-gomez-angel.jpg");
+    margin-top: 55px;
 }
 
 .nav-image {
@@ -24,7 +28,7 @@ h2 {
     display: block;
     margin: auto;
     padding: 10px;
-    background-color: #f8f9fa;
+    background-color: #949292;
 }
 
 .main-thumbnail {
@@ -37,17 +41,6 @@ h2 {
   transform: scale(1.1);
   opacity: 0.7;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Style the Image Used to Trigger the Modal */
 #myImg0,
@@ -142,4 +135,10 @@ h2 {
     .modal-content {
         width: 100%;
     }
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
 }

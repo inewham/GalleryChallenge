@@ -7,7 +7,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
@@ -18,9 +17,12 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-local">
       <a class="navbar-brand" href="#">
-        <img class="d-inline-block align-center nav-image" src="images/ki.gif" width="30" height="30" alt="Saiyan Solutions Logo">
-        Saiyan Solutions
+        <img class="d-inline-block align-center nav-image" src="images/ki.gif" width="30" height="30" alt="Saiyan Solutions Logo" data-toggle="modal" data-target="#companyModal">
+        <!-- Saiyan Solutions -->
       </a>
+
+      Saiyan Solutions
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,16 +30,8 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#ScopeModal">Gallery Challenge: Requirements <span class="sr-only">(current)</span>
+            </a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -49,40 +43,493 @@
 
     <header id="title">Gallery Challenge</header>
 
-      <!-- Image Thumbnails -->
-      <div class="main-container">
-        <img id="myImg0" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image0.jpg">
-        <img id="myImg1" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image1.jpg">
-        <img id="myImg2" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image2.jpg">
-        <img id="myImg3" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image3.jpg">
-        <img id="myImg4" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image4.jpg">
-        <img id="myImg5" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image5.jpg">
-        <img id="myImg6" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image6.jpg">
-        <img id="myImg7" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image7.jpg">
-        <img id="myImg8" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image8.jpg">
-        <img id="myImg9" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image9.jpg">
-        <img id="myImg10" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image10.jpg">
-        <img id="myImg11" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image11.jpg">
-        <img id="myImg12" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image12.jpg">
-        <img id="myImg13" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image13.jpg">
-        <img id="myImg14" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image14.jpg">
-        <img id="myImg15" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image15.jpg">
-        <img id="myImg16" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image16.jpg">
-        <img id="myImg17" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image17.jpg">
-      </div>  
+	<!-- company Modal -->
+	<div class="modal fade" id="companyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Company Directory</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	<img id="companyModal" class="img-thumbnail" alt="Company Director" src="images/companyModal.jpg">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
-      <!-- The Modal -->
-      <div id="myModal" class="modal">
+	<!-- Navbar Modal -->
+	<div class="modal fade" id="ScopeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel"><strong>Gallery Challenge: Requirements</strong></h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p>A photo gallery with the following functionality:<br>
+	        	<ul>
+	        		<li>
+					A tile based view/layout. 
+					</li>
+					<li>
+					Neatly laid out in desktop and mobile.
+					</li>
+					<li>
+					When you press an image it should overlay the page with a larger version, that can then be closed.
+					</li>
+					<li>
+					Extra credit: Arrow buttons on the large view to go to next or previous.
+					</li>
+				</ul>
+			</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
-        <!-- The Close Button -->
-        <span class="close">&times;</span>
+	<!-- Image Thumbnails -->
+	<div class="main-container">
 
-        <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img01">
+		<a href="#" data-toggle="modal" data-target="#myImg0Modal">
+			<img id="myImg0" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image0.jpg">
+		</a>
+		<!-- myImg0 Modal -->
+		<div class="modal fade" id="myImg0Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg0" class="img-thumbnail" alt="cable management image" src="images/image0.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
-        <!-- Modal Caption (Image Text) -->
-        <div id="caption"></div>
-      </div>
+		<a href="#" data-toggle="modal" data-target="#myImg1Modal">
+			<img id="myImg1" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image1.jpg">
+		</a>
+
+		<!-- myImg1 Modal -->
+		<div class="modal fade" id="myImg1Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg1" class="img-thumbnail" alt="cable management image" src="images/image1.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<a href="#" data-toggle="modal" data-target="#myImg2Modal">
+			<img id="myImg2" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image2.jpg">
+		</a>
+
+		<!-- myImg2 Modal -->
+		<div class="modal fade" id="myImg2Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg2" class="img-thumbnail" alt="cable management image" src="images/image2.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<a href="#" data-toggle="modal" data-target="#myImg3Modal">
+			<img id="myImg3" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image3.jpg">
+		</a>
+
+		<!-- myImg3 Modal -->
+		<div class="modal fade" id="myImg3Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg3" class="img-thumbnail" alt="cable management image" src="images/image3.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<a href="#" data-toggle="modal" data-target="#myImg4Modal">
+			<img id="myImg4" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image4.jpg">
+		</a>
+
+		<!-- myImg4 Modal -->
+		<div class="modal fade" id="myImg4Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg4" class="img-thumbnail" alt="cable management image" src="images/image4.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+				<a href="#" data-toggle="modal" data-target="#myImg5Modal">
+			<img id="myImg5" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image5.jpg">
+		</a>
+
+		<!-- myImg5 Modal -->
+		<div class="modal fade" id="myImg5Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg5" class="img-thumbnail" alt="cable management image" src="images/image5.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<a href="#" data-toggle="modal" data-target="#myImg6Modal">
+			<img id="myImg6" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image6.jpg">
+		</a>
+
+		<!-- myImg6 Modal -->
+		<div class="modal fade" id="myImg6Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg6" class="img-thumbnail" alt="cable management image" src="images/image6.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<a href="#" data-toggle="modal" data-target="#myImg7Modal">
+			<img id="myImg7" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image7.jpg">
+		</a>
+
+		<!-- myImg7 Modal -->
+		<div class="modal fade" id="myImg7Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg7" class="img-thumbnail" alt="cable management image" src="images/image7.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<a href="#" data-toggle="modal" data-target="#myImg8Modal">
+			<img id="myImg8" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image8.jpg">
+		</a>		<a href="#" data-toggle="modal" data-target="#myImg9Modal">
+			<img id="myImg9" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image9.jpg">
+		</a>
+
+		<!-- myImg9 Modal -->
+		<div class="modal fade" id="myImg9Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg9" class="img-thumbnail" alt="cable management image" src="images/image9.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- myImg8 Modal -->
+		<div class="modal fade" id="myImg8Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg8" class="img-thumbnail" alt="cable management image" src="images/image8.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<a href="#" data-toggle="modal" data-target="#myImg9Modal">
+			<img id="myImg10" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image10.jpg">
+		</a>
+
+		<!-- myImg10 Modal -->
+		<div class="modal fade" id="myImg10Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg10" class="img-thumbnail" alt="cable management image" src="images/image10.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<a href="#" data-toggle="modal" data-target="#myImg11Modal">
+			<img id="myImg11" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image11.jpg">
+		</a>
+
+		<!-- myImg11 Modal -->
+		<div class="modal fade" id="myImg11Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg11" class="img-thumbnail" alt="cable management image" src="images/image11.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<a href="#" data-toggle="modal" data-target="#myImg12Modal">
+			<img id="myImg12" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image12.jpg">
+		</a>
+
+		<!-- myImg12 Modal -->
+		<div class="modal fade" id="myImg12Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg12" class="img-thumbnail" alt="cable management image" src="images/image12.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<a href="#" data-toggle="modal" data-target="#myImg13Modal">
+			<img id="myImg13" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image13.jpg">
+		</a>
+
+		<!-- myImg13 Modal -->
+		<div class="modal fade" id="myImg13Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg13" class="img-thumbnail" alt="cable management image" src="images/image13.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<a href="#" data-toggle="modal" data-target="#myImg14Modal">
+			<img id="myImg14" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image14.jpg">
+		</a>
+
+		<!-- myImg14 Modal -->
+		<div class="modal fade" id="myImg14Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg14" class="img-thumbnail" alt="cable management image" src="images/image14.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<a href="#" data-toggle="modal" data-target="#myImg15Modal">
+			<img id="myImg15" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image15.jpg">
+		</a>
+
+		<!-- myImg15 Modal -->
+		<div class="modal fade" id="myImg15Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg15" class="img-thumbnail" alt="cable management image" src="images/image15.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<a href="#" data-toggle="modal" data-target="#myImg16Modal">
+			<img id="myImg16" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image16.jpg">
+		</a>
+
+		<!-- myImg16 Modal -->
+		<div class="modal fade" id="myImg16Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg16" class="img-thumbnail" alt="cable management image" src="images/image16.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<a href="#" data-toggle="modal" data-target="#myImg17Modal">
+			<img id="myImg17" class="img-thumbnail main-thumbnail" alt="cable management image" src="images/image17.jpg">
+		</a>
+
+		<!-- myImg17 Modal -->
+		<div class="modal fade" id="myImg17Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Cable Management Image</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<img id="myImg17" class="img-thumbnail" alt="cable management image" src="images/image17.jpg">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div> 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

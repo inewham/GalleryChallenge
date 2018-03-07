@@ -37,7 +37,6 @@ h2 {
 }
 
 .main-container {
-    display: block;
     margin: auto;
     padding: 10px;
     background-color: #C0C0C0;
@@ -47,6 +46,10 @@ h2 {
     margin: 5px;
     width: 8em;
     height: auto;
+}
+
+.img-thumbnail {
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .main-thumbnail:hover {

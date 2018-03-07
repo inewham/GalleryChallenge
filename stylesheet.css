@@ -20,6 +20,10 @@ h2 {
     margin-top: 55px;
 }
 
+.navbar-local {
+    background-color: #EEEEEE;
+}
+
 .nav-image {
     border-radius:20px;
 }
@@ -28,7 +32,7 @@ h2 {
     display: block;
     margin: auto;
     padding: 10px;
-    background-color: #949292;
+    background-color: #C0C0C0;
 }
 
 .main-thumbnail {
